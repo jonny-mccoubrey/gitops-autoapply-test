@@ -1,7 +1,7 @@
 git:
   # git repository from where to download Kubernetes object files
   # NOTE: could this be a local repository?
-  url: "git@github.com:jonny-mccoubrey/gitops-autoapply-test.git"
+  url: "https://github.com/jonny-mccoubrey/gitops-autoapply-test.git"
 kubernetes:
   # namespace where the autoapply objects will be created
   namespace: "autoapply-test"
