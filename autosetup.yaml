@@ -7,4 +7,4 @@ kubernetes:
   namespace: "autoapply-test"
   # the paths within the repository to apply
   paths:
-  - "dev"
+    - "dev"
