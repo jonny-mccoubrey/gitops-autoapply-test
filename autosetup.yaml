@@ -6,10 +6,10 @@ git:
   branch: "main"
 kubernetes:
   # namespace where the autoapply objects will be created
-  namespace: "autoapply"
+  namespace: "autoapply-test"
   # the namespaces the autoapply service account will have access to
   namespace-access:
-  - "autoapply"
+  - "autoapply-test"
   # kubernetes resource limits
   resources:
     memory: 128Mi
