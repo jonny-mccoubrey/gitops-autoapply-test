@@ -2,25 +2,9 @@ git:
   # git repository from where to download Kubernetes object files
   # NOTE: could this be a local repository?
   url: "git@github.com:jonny-mccoubrey/gitops-autoapply-test.git"
-  # branch to checkout after cloning
-  branch: "main"
 kubernetes:
   # namespace where the autoapply objects will be created
   namespace: "autoapply-test"
-  # the namespaces the autoapply service account will have access to
-  namespace-access:
-  - "autoapply-test"
-  # kubernetes resource limits
-  resources:
-    memory: 128Mi
-    cpu: 15m
   # the paths within the repository to apply
   paths:
   - "dev"
-  # whether to run "kubectl kustomize"
-  kustomize: false
-autoapply:
-  # container image to use
-  image: autoapply/autoapply
-  # time to pause between runs
-  sleep: 30
